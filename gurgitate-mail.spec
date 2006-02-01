@@ -1,4 +1,5 @@
 Summary:	gurgitate mail filtering and mail delivery agent
+Summary(pl):	gurgitate - narzêdzie do filtrowania i dostarczania poczty
 Name:		gurgitate-mail
 Version:	1.6.0
 Release:	0.1
@@ -19,20 +20,24 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 according to the .gurgitate-rules.rb file in your home directory. The
 configuration file uses Ruby syntax and is thus quite flexible.
 
+%description -l pl
+gurgitate-mail to program odczytuj±cy pocztê i filtruj±cy j± zgodnie z
+plikiem .gurgitate-rules.rb w katalogu domowym. Plik konfiguracyjny
+u¿ywa sk³adni Ruby'ego, przez co jest do¶æ elastyczny.
+
 %prep
 %setup -q -n %{name}
 
-%build
-
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/{%{_bindir},%{ruby_rubylibdir},%{_mandir}/man1}
-echo "#!/usr/bin/ruby" > $RPM_BUILD_ROOT/%{_bindir}/gurgitate-mail
-cat gurgitate-mail >> $RPM_BUILD_ROOT/%{_bindir}/gurgitate-mail
-chmod +x $RPM_BUILD_ROOT/%{_bindir}/gurgitate-mail
-cp -a gurgitate-mail.rb $RPM_BUILD_ROOT/%{ruby_rubylibdir}
-cp -a gurgitate $RPM_BUILD_ROOT/%{ruby_rubylibdir}
-install gurgitate-mail.man $RPM_BUILD_ROOT/%{_mandir}/man1/%{name}.1
+install -d $RPM_BUILD_ROOT{%{_bindir},%{ruby_rubylibdir},%{_mandir}/man1}
+
+echo "#!/usr/bin/ruby" > $RPM_BUILD_ROOT%{_bindir}/gurgitate-mail
+cat gurgitate-mail >> $RPM_BUILD_ROOT%{_bindir}/gurgitate-mail
+chmod +x $RPM_BUILD_ROOT%{_bindir}/gurgitate-mail
+cp -a gurgitate-mail.rb $RPM_BUILD_ROOT%{ruby_rubylibdir}
+cp -a gurgitate $RPM_BUILD_ROOT%{ruby_rubylibdir}
+install gurgitate-mail.man $RPM_BUILD_ROOT%{_mandir}/man1/%{name}.1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
