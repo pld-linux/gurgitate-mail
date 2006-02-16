@@ -6,8 +6,8 @@ Release:	0.1
 License:	GPL
 Group:		Development/Languages
 %define tarname rubymail
-Source0:	http://www.dagbrown.com/software/gurgitate-mail/%{name}-%{version}preview.tar.gz
-# Source0-md5:	7c7afef00c3c091148c15838357ad605
+Source0:	http://www.dagbrown.com/software/gurgitate-mail/%{name}-%{version}preview5.tar.gz
+# Source0-md5:	287715874a9ba5a8e5ca2bca666693f0
 URL:		http://www.dagbrown.com/software/gurgitate-mail/
 BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-devel
