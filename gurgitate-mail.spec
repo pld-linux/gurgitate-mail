@@ -1,5 +1,5 @@
 Summary:	gurgitate mail filtering and mail delivery agent
-Summary(pl):	gurgitate - narzêdzie do filtrowania i dostarczania poczty
+Summary(pl.UTF-8):   gurgitate - narzÄ™dzie do filtrowania i dostarczania poczty
 Name:		gurgitate-mail
 Version:	1.6.3
 Release:	1
@@ -19,10 +19,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 according to the .gurgitate-rules.rb file in your home directory. The
 configuration file uses Ruby syntax and is thus quite flexible.
 
-%description -l pl
-gurgitate-mail to program odczytuj±cy pocztê i filtruj±cy j± zgodnie z
+%description -l pl.UTF-8
+gurgitate-mail to program odczytujÄ…cy pocztÄ™ i filtrujÄ…cy jÄ… zgodnie z
 plikiem .gurgitate-rules.rb w katalogu domowym. Plik konfiguracyjny
-u¿ywa sk³adni Ruby'ego, przez co jest do¶æ elastyczny.
+uÅ¼ywa skÅ‚adni Ruby'ego, przez co jest doÅ›Ä‡ elastyczny.
 
 %prep
 %setup -q -n %{name}
