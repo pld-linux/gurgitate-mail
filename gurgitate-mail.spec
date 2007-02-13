@@ -1,5 +1,5 @@
 Summary:	gurgitate mail filtering and mail delivery agent
-Summary(pl.UTF-8):   gurgitate - narzędzie do filtrowania i dostarczania poczty
+Summary(pl.UTF-8):	gurgitate - narzędzie do filtrowania i dostarczania poczty
 Name:		gurgitate-mail
 Version:	1.6.3
 Release:	1
