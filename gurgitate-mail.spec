@@ -1,12 +1,12 @@
 Summary:	gurgitate mail filtering and mail delivery agent
 Summary(pl.UTF-8):	gurgitate - narzędzie do filtrowania i dostarczania poczty
 Name:		gurgitate-mail
-Version:	1.8.1
+Version:	1.8.2
 Release:	1
 License:	GPL
 Group:		Development/Languages
 Source0:	http://www.dagbrown.com/software/gurgitate-mail/%{name}-%{version}.tar.gz
-# Source0-md5:	bde0618446f23bcd2da61acddc7e5cf7
+# Source0-md5:	0b55c117379c8267a988fce420e5a438
 URL:		http://www.dagbrown.com/software/gurgitate-mail/
 BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-devel
